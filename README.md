@@ -1,2 +1,3 @@
 # INSE7B-Code
-Barbershop ting
+### Files
+- `database.sql` – file to create the database
