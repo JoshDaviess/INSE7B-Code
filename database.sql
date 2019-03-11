@@ -1,4 +1,5 @@
 create database inseDB;
+use inseDB;
 
 -- Main Table
 create table Shop(
@@ -22,7 +23,7 @@ foreign key (shopID) references Shop(shopID)
 );
 
 -- Shop times table
-create table shopTimes(
+create table ShopTimes(
 shopID smallint not null auto_increment,
 mondayOpen time,
 mondayClose time,
@@ -42,7 +43,8 @@ foreign key (shopID) references Shop(shopID)
 );
 
 -- Shop login details
-create table login(
+create table Login(
 shopID smallint not null auto_increment,
-shopPass varchar(10)
+shopPass varchar(10),
+foreign key (shopID) references Shop(shopID)
 );
