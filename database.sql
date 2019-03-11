@@ -48,3 +48,14 @@ shopID smallint not null auto_increment,
 shopPass varchar(10),
 foreign key (shopID) references Shop(shopID)
 );
+
+--User database
+CREATE TABLE USERS
+( 
+USER_NAME VARCHAR (12) PRIMARY KEY,
+FIRST_NAME VARCHAR (30)	NOT NULL,
+LAST_NAME VARCHAR(30)	NOT NULL,
+EMAIL_ADDRESS VARCHAR (30) NOT NULL,
+PASSWORD VARCHAR(12) NOT NULL,
+REG_DATE TIMESTAMP
+);
