@@ -1,5 +1,6 @@
 # INSE7B-Code
 ### Files
-- `database.sql` – file to create the database
-- `index.html` – Main Page
-- `Map.html` – Map page for Users 
+- `server.js` - starts server on port 8080
+- `database.sql` – creates the database
+- `index.html` – homepage
+- `map.html` – map page
