@@ -1,7 +1,4 @@
-'use scrict'
-
-//const express = require('express');
-//const app = express;
+'use scrict';
 
 const http = require('http');
 
