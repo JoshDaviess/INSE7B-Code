@@ -1,0 +1,17 @@
+{
+  "name": "INSE7B",
+  "version": "1.0.0",
+  "description": "INSE7B - barbershop program",
+  "main": "server",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon server/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshDaviess/INSE7B-Code.git"
+  },
+  "homepage": "https://github.com/JoshDaviess/INSE7B-Code#README",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
