@@ -1,11 +1,10 @@
 'use scrict';
 
-const http = require('http');
+const express = require('express');
+const app = express();
 
-const server = http.createServer(function(req, res){
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World');
-});
+app.use(express.static('./webpages'));
 
-server.listen(8080, '127.0.0.1');
-console.log('Listening on port 8080...');
+//starting server on port 8080
+app.listen(8080);
+console.log("Listening on port 8080");
