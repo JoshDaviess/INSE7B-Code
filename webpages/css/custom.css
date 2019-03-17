@@ -1,33 +1,39 @@
-	.navbar{
+.navbar-expand-md{
 		margin-bottom: 0;
-		border-radius: 0;
-		background-color: #E24C3B;
-		padding: 1% 0;
+		border-radius: 1px;
+		padding: 0% 0;
 		font-size:1.1em;
 		border: 0;
-		
+        background-color: #E24C3B;
+   
 	}
-	.navbar-brand{
+.navbar-brand{
 		position: relative;
-		float: left;
+		flex: initial;
 		min-height: 50px;
-		padding: 0 15px 5px;
-		
+		padding-top: 10px;
+        padding-left: 10px;
 	}
 	
-	.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
-		background: #E24C3B;
-		
-		
+.navbar .navbar-nav li a
+    {
+     
 	}
-	.navbar .navbar-nav li a
-	{
-		float: right;
-		background: #E24C3B;
-		
-		
+
+html body
+    {
+        background-color:  #FBF3EF;
+    }
+
+nav li a:hover
+    {
+		color: #E24C3B !important;
+        background-color: #FBF3EF;
+        border-radius: 5px;
+        
 	}
-	html body {
-    background-color:  #FBF3EF;
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
 
 }
