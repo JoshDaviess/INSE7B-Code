@@ -1,0 +1,33 @@
+	.navbar{
+		margin-bottom: 0;
+		border-radius: 0;
+		background-color: #E24C3B;
+		padding: 1% 0;
+		font-size:1.1em;
+		border: 0;
+		
+	}
+	.navbar-brand{
+		position: relative;
+		float: left;
+		min-height: 50px;
+		padding: 0 15px 5px;
+		
+	}
+	
+	.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+		background: #E24C3B;
+		
+		
+	}
+	.navbar .navbar-nav li a
+	{
+		float: right;
+		background: #E24C3B;
+		
+		
+	}
+	html body {
+    background-color:  #FBF3EF;
+
+}
