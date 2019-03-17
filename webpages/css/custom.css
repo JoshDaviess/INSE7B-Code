@@ -29,13 +29,12 @@ nav li a.background
     {
        background-size: 0px;
     }
-.link
+#link
     {
         display: inline-block;
-        background-color: blue;
         
     }
-
+#collapsibleNavbar{display: inline-block;}
 #link:hover
     {
 		color: #E24C3B !important;
@@ -64,23 +63,28 @@ a:before,  a:after
     content: "";
     opacity: 0;
     transition: all 0.3s;
-
+    display: inline-block;
+    max-width: inherit;
 }
 
-.a:before
+a:before
 {
     top: 0px;
     transform: translateY(10px);
-
+    display: inline-block;
+    max-width: inherit;
 }
 a:after
 {
     bottom: 0px;
     transform: translateY(-10px);
-
+    display: inline-block;
+    max-width: inherit;
 }
 a:hover:before, a:hover:after
 {
     opacity: 1;
     transform: translateY(0px);
-  
+    display: inline-block;
+    max-width: inherit;
+}
