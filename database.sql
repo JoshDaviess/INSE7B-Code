@@ -71,3 +71,6 @@ insert into Shop VALUES (NULL, "Southsea Cuts", 50.782527, -1.087824, 0, 0, '00:
 insert into Shop VALUES (NULL, "Clean Shave Shop", 50.786894, -1.079205, 0, 0, '00:10:00');
 insert into Shop VALUES (NULL, "Just Cutting", 50.786268, -1.069937, 0, 0, '00:11:00');
 insert into Shop VALUES (NULL, "Cheapo Cuts", 50.783789, -1.070452, 0, 0, '00:12:30');
+
+--DUMMY USER DATA
+INSERT INTO USERS VALUES('cutmyhair' , 'David' , 'Johnson' ,' DavidJ@gmail.com', 'david123', '2019-01-02');
