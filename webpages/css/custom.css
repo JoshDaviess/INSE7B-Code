@@ -5,6 +5,7 @@
 		font-size:1.1em;
 		border: 0;
         background-color: #E24C3B;
+        
    
 	}
 .navbar-brand{
@@ -22,7 +23,7 @@
 
 html body
     {
-        background-color:  #FBF3EF;
+        background-color:  #E4B477;
     }
 
 nav li a.background
@@ -38,7 +39,7 @@ nav li a.background
 #link:hover
     {
 		color: #E24C3B !important;
-        background-color: #FBF3EF;
+        background-color: #E4B477;
         border-radius: 5px;
         padding: 5px;
         transition: .5s ease;
