@@ -16,11 +16,6 @@
         padding-left: 10px;
 	}
 	
-.navbar .navbar-nav li a
-    {
-     
-	}
-
 html body
     {
         background-color:  #E4B477;
@@ -44,6 +39,7 @@ nav li a.background
         padding: 5px;
         transition: .5s ease;
         transition-property: width 100px;
+        font-weight: bold;
         
 	} 
 .flex-container {
@@ -52,7 +48,7 @@ nav li a.background
         display: inline-block;
 
 }
-
+/*https://codepen.io/EvyatarDa/pen/waKXMd*/
 /* Top and Bottom borders go out */
 a:before,  a:after
 {
