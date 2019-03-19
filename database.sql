@@ -96,4 +96,12 @@ INSERT INTO USERS VALUES(NULL,'Shaveme123' , 'Carl' , 'Antonio' ,' Bestfirst432@
 INSERT INTO USERS VALUES(NULL,'Behindyou' , 'Feriss' , 'Athreat' ,' runaway@gmail.com', 'itstolate999', '2019-06-03 12:22:14 ' );
 INSERT INTO USERS VALUES(NULL,'portsmasugang' , 'Kofi' , 'kingston' ,' JohnCena@gmail.com', 'tripplehhh', '2019-02-01 23:42:16 ' );
 
+--Appointment table--
+CREATE TABLE Appointments(
+     AppointmentID smallint not null auto_increment, 
+     Date_Created TIMESTAMP , 
+     Appointment_Date TIMESTAMP, 
+     primary key(AppointmentID)
+     );
+
 
