@@ -5,6 +5,12 @@ const app = express();
 
 app.use(express.static('./webpages'));
 
-//starting server on port 8080
-app.listen(8080);
-console.log("Listening on port 8080");
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
+// start the server
+app.listen(8080, (err) => {
+  if (err) console.error('error starting server', err);
+  else console.log('server started');
+});
