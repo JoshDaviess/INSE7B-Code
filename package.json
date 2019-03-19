@@ -4,7 +4,8 @@
   "description": "INSE7B - barbershop program",
   "main": "server",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon server/server"
+    "start": "./node_modules/.bin/nodemon server/server",
+    "initdb": "mysql -u root -p < database.sql"
   },
   "repository": {
     "type": "git",
