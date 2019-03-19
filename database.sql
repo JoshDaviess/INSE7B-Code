@@ -54,14 +54,16 @@ foreign key (shopID) references Shop(shopID)
 
 --User database
 CREATE TABLE USERS
-( 
-USER_NAME VARCHAR (12) PRIMARY KEY,
-FIRST_NAME VARCHAR (30)	NOT NULL,
-LAST_NAME VARCHAR(30)	NOT NULL,
-EMAIL_ADDRESS VARCHAR (30) NOT NULL,
-PASSWORD VARCHAR(12) NOT NULL,
-REG_DATE TIMESTAMP
-);
+     ( 
+     UserID smallint not null auto_increment, 
+     USER_NAME VARCHAR (18) ,
+     FIRST_NAME VARCHAR (30)NOT NULL,
+     LAST_NAME VARCHAR(30)NOT NULL,
+     EMAIL_ADDRESS VARCHAR (30) NOT NULL,
+     PASSWORD VARCHAR(18) NOT NULL,
+     REG_DATE TIMESTAMP,
+     primary Key(UserID)
+     );
 
 -- Dummy Shop Values
 insert into Shop VALUES (NULL, "Crazy Cuts", 50.786600, -1.072379, 0, 0, '00:13:00');
