@@ -35,14 +35,33 @@
             </li></div>
             <div class="link">
             <li class="nav-item">
-                <a class="nav-link" href="barbpage.html" id="link">BarberMode</a>
+                <a class="nav-link" href="indexBarber.html" id="link">BarberMode</a>
             </li></div>
         </ul>
     </div>
     </nav>
     <!--- End of NavBar -->
-        
-<h1>Map will be shown here</h1>
+
+    <h3>Google Maps</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Portsmouth (50.7951868,-1.0941392)
+    var portsmouth = {lat: 50.7951868, lng: -1.0941392};
+    // The map, centered at Portsmouth
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: portsmouth});
+    // The marker, positioned at Portsmouth
+    //var marker = new google.maps.Marker({position: portsmouth, map: map});
+    }
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Fd1TTEwH1qdMNvYdNJh7XVahBHc47J4&callback=initMap">
+  </script>
 
 </body>
 </html>

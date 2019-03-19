@@ -5,8 +5,8 @@
 		font-size:1.1em;
 		border: 0;
         background-color: #E24C3B;
-        
-   
+
+
 	}
 .navbar-brand{
 		position: relative;
@@ -15,7 +15,7 @@
 		padding-top: 10px;
         padding-left: 10px;
 	}
-	
+
 html body
     {
         background-color:  #E4B477;
@@ -28,7 +28,7 @@ nav li a.background
 #link
     {
         display: inline-block;
-        
+
     }
 #collapsibleNavbar{display: inline-block;}
 #link:hover
@@ -40,8 +40,8 @@ nav li a.background
         transition: .5s ease;
         transition-property: width 100px;
         font-weight: bold;
-        
-	} 
+
+	}
 .flex-container {
         display: flex;
         justify-content: flex-end;
@@ -85,4 +85,12 @@ a:hover:before, a:hover:after
     display: inline-block;
     max-width: inherit;
 }
+
 h1{color: whitesmoke;}
+
+
+#map {
+				height: 500px;  /* The height is 500 pixels */
+        width: 100%;  /* The width is the width of the web page */
+     }
+
