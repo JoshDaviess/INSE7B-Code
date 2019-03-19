@@ -90,4 +90,10 @@ insert into ShopTimes VALUES (9, "08:00:00", "19:00:00", "08:00:00", "18:00:00",
 insert into ShopTimes VALUES (10, "08:00:00", "19:00:00", "08:00:00", "18:00:00", "09:00:00", "18:00:00", "08:00:00", "18:00:00", "09:00:00", "18:00:00", "08:00:00", "18:00:00", "08:00:00", "17:00:00");
 
 --DUMMY USER DATA
+INSERT INTO USERS VALUES(NULL,'cutmyhair' , 'David' , 'Johnson' ,' DavidJ@gmail.com', 'david123', '2019-01-02');
+INSERT INTO USERS VALUES(NULL,'Iambold' , 'Shawn' , 'Bold' ,' boldhead@gmail.com', 'boldielocks', '2019-04-03 01:43:08 ' );
+INSERT INTO USERS VALUES(NULL,'Shaveme123' , 'Carl' , 'Antonio' ,' Bestfirst432@gmail.com', 'powerpuffgirls', '2019-02-01 11:23:12 ' );
+INSERT INTO USERS VALUES(NULL,'Behindyou' , 'Feriss' , 'Athreat' ,' runaway@gmail.com', 'itstolate999', '2019-06-03 12:22:14 ' );
+INSERT INTO USERS VALUES(NULL,'portsmasugang' , 'Kofi' , 'kingston' ,' JohnCena@gmail.com', 'tripplehhh', '2019-02-01 23:42:16 ' );
+
 
