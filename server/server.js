@@ -3,12 +3,10 @@
 const express = require('express');
 const app = express();
 
-//app.use(express.static('./webpages'));
+app.use(express.static(__dirname + '/webpages'));
 
-app.use('/', express.static(config.webpages, { extensions: ['html'] }));
-
-// start the server
+// starts the server
 app.listen(8080, (err) => {
-  if (err) console.error('error starting server', err);
-  else console.log('server started');
+  if (err) console.error('Error starting server', err);
+  else console.log('Server started on port 8080');
 });
