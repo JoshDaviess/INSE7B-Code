@@ -4,3 +4,4 @@
 - `database.sql` – creates the database
 - `index.html` – homepage
 - `map.html` – map page
+--server-- http://35.241.170.46/index.html
