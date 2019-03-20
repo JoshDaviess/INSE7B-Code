@@ -117,6 +117,31 @@ button {
 
      }
 
+
+
+footer.main-footer {
+  padding: 7rem 0;
+  background-color: #E24C3B;
+  color: #fff;
+  padding-bottom: 0;
+}
+
+.footer-logo {
+  width: 7.5rem;
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0.3rem 0;
+}
+
+.footer-link:hover, .footer-link:focus {
+        color: #0088E0;
+
+}
+
 /* ========== Animations ========== */
 
 
