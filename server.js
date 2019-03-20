@@ -3,7 +3,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const mysql = require('mysql2/promise');
+const mysql = require('mysql');
 
 app.use(express.static(path.join(__dirname + '/webpages')));
 
