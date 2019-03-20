@@ -48,6 +48,15 @@
     <div id="map"></div>
 
 <script>
+		const mysql = require('mysql');
+
+		var sqlconnect =  mysql.createConnection({
+		      host: 'localhost',
+		      user: 'root',
+		      password: 'root',
+		      database: 'inseDB'
+		  });
+
     // Initialize and add the map
     function initMap() {
       // The location of Portsmouth (50.7951868,-1.0941392)
@@ -56,6 +65,12 @@
     var map = new google.maps.Map(
         document.getElementById('map'), {zoom: 15, center: portsmouth});
     // The marker, positioned at Portsmouth
+
+		sqlconnect.connect();
+		sqlconnect.query('Select * from Shop', function (error, results, fields) {
+		  if (error) throw error;
+		  console.log(results);
+		});
 
     //var marker = new google.maps.Marker({position: portsmouth, map: map});
     }
