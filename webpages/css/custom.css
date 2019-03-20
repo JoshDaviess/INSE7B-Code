@@ -13,8 +13,14 @@ html body
 
 h1{color: whitesmoke;}
 
+.bg-primary {
+  background-color: #0088e0 !important;
+}
 
-
+.Info{
+    
+    background-color: #FBF3EF;
+}
 
 
 /* ========== Navigation Bar ========== */
@@ -29,13 +35,13 @@ h1{color: whitesmoke;}
         color: 
 	}
 nav.navbar.active {
-  background: #fff;
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+        background: #fff;
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
 }
 nav.navbar {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
 }
 
 
@@ -56,14 +62,14 @@ nav.navbar {
 	}
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-  border-radius: 3rem;
-    
+        padding: 0.25rem 0.75rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 3rem;
+
 }
 
 
@@ -77,9 +83,9 @@ nav li a.background
 /* ========== Buttons ========== */
 
 button {
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
 }
 .btn-primary {
         color: #fff;
@@ -92,13 +98,13 @@ button {
     
 }
 .btn-primary:hover {
-  color: #fff;
-  border-color: #de1d39;
+        color: #fff;
+        border-color: #de1d39;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
 }
 
 
@@ -118,36 +124,36 @@ button {
 /* Top and Bottom borders go out 
 a:before,  a:after
 {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: #FFF;
+        content: "";
+        opacity: 0;
+        transition: all 0.3s;
    
     
 }
 
 a:before
 {
-    top: 0px;
-    transform: translateY(10px);
+        top: 0px;
+        transform: translateY(10px);
    
    
 }
 a:after
 {
-    bottom: 0px;
-    transform: translateY(-10px);
+        bottom: 0px;
+        transform: translateY(-10px);
     
     
 }
 a:hover:before, a:hover:after
 {
-    opacity: 1;
-    transform: translateY(0px);
+        opacity: 1;
+        transform: translateY(0px);
    
   
 }*/
