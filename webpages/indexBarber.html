@@ -3,21 +3,47 @@
 <head>
 	<title>Barber Main page </title>
 
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<!--- Bootstrap-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="css/barbstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Custom styles --->
+	<link href="css/custom.css" rel="stylesheet">
 
 </head>
 
 <body>
 	<header class="landing">
-		<div class="headerNavigation">
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-				</ul>
-			</nav>
+	<!--- NavBar -->
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<!-- Brand -->
+			<a class="navbar-brand" href="index.html">FindMyBarber</a>
+
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		<div class="collapse navbar-collapse flex-container" id="collapsibleNavbar">
+		   <ul class="navbar-nav text-right">
+				<div class="link">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html" id="link">Home</a>
+				</li></div>
+				<div class="link">
+				<li class="nav-item">
+					<a class="nav-link" href="map.html" id="link">Map</a>
+				</li></div>
+				<div class="link">
+				<li class="nav-item">
+					<a class="nav-link active" href="indexBarber.html" id="link">BarberMode</a>
+				</li></div>
+			</ul>
+		</div>
+		</nav>
+		<!--- End of NavBar -->
 
 			<div class="headerContent">
 				<h1>'Barbershop name'</h1>

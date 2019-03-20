@@ -27,10 +27,10 @@ nav li a.background
     }
 #link
     {
-        display: inline-block;
+        /*display: inline-block;*/
 
     }
-#collapsibleNavbar{display: inline-block;}
+
 #link:hover
     {
 		color: #E24C3B !important;
@@ -45,7 +45,7 @@ nav li a.background
 .flex-container {
         display: flex;
         justify-content: flex-end;
-        display: inline-block;
+       /* display: inline-block;*/
 
 }
 /*https://codepen.io/EvyatarDa/pen/waKXMd*/
@@ -60,7 +60,7 @@ a:before,  a:after
     content: "";
     opacity: 0;
     transition: all 0.3s;
-    display: inline-block;
+    /*display: inline-block;*/
     max-width: inherit;
 }
 
@@ -68,21 +68,21 @@ a:before
 {
     top: 0px;
     transform: translateY(10px);
-    display: inline-block;
+    /*display: inline-block;*/
     max-width: inherit;
 }
 a:after
 {
     bottom: 0px;
     transform: translateY(-10px);
-    display: inline-block;
+    /*display: inline-block;*/
     max-width: inherit;
 }
 a:hover:before, a:hover:after
 {
     opacity: 1;
     transform: translateY(0px);
-    display: inline-block;
+    /*display: inline-block;*/
     max-width: inherit;
 }
 
