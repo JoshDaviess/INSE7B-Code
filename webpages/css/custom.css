@@ -5,17 +5,70 @@
 		font-size:1.1em;
 		border: 0;
         background-color: #E24C3B;
-
-
+        font-weight: bold;
+        color: 
 	}
+nav.navbar.active {
+  background: #fff;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+}
+nav.navbar {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+button {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-primary {
+        color: #fff;
+        background-color: #0088E0 ;
+        border-color: #E24C3B;
+        border-radius: 15x;
+        outline: none !important;
+        width: 80px;
+    
+    
+}
+.btn-primary:hover {
+  color: #fff;
+  border-color: #de1d39;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
+}
+
+.navbar-toggler:focus,.navbar-toggler:active {
+        outline: none !important;
+        box-shadow: none;
+
+}
+
 .navbar-brand{
-		position: relative;
-		flex: initial;
-		min-height: 50px;
-		padding-top: 10px;
-        padding-left: 10px;
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        width: 7.5rem;
+        
 	}
 
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 3rem;
+    
+}
 html body
     {
         background-color:  #E4B477;
@@ -23,25 +76,11 @@ html body
 
 nav li a.background
     {
-       background-size: 0px;
-    }
-#link
-    {
-        /*display: inline-block;*/
-
+        background-size: 0px;
+        color: #fff !important;
     }
 
-#link:hover
-    {
-		color: #E24C3B !important;
-        background-color: #E4B477;
-        border-radius: 5px;
-        padding: 5px;
-        transition: .5s ease;
-        transition-property: width 100px;
-        font-weight: bold;
 
-	}
 .flex-container {
         display: flex;
         justify-content: flex-end;
@@ -61,7 +100,7 @@ a:before,  a:after
     opacity: 0;
     transition: all 0.3s;
     /*display: inline-block;*/
-    max-width: inherit;
+    
 }
 
 a:before
@@ -69,28 +108,28 @@ a:before
     top: 0px;
     transform: translateY(10px);
     /*display: inline-block;*/
-    max-width: inherit;
+   
 }
 a:after
 {
     bottom: 0px;
     transform: translateY(-10px);
     /*display: inline-block;*/
-    max-width: inherit;
+    
 }
 a:hover:before, a:hover:after
 {
     opacity: 1;
     transform: translateY(0px);
     /*display: inline-block;*/
-    max-width: inherit;
+  
 }
 
 h1{color: whitesmoke;}
 
 
 #map {
-				height: 500px;  /* The height is 500 pixels */
+        height: 500px;  /* The height is 500 pixels */
         width: 100%;  /* The width is the width of the web page */
      }
 
