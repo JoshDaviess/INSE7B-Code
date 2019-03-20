@@ -7,22 +7,21 @@ const mysql = require('mysql');
 
 app.use(express.static(path.join(__dirname + '/webpages')));
 
-app.get('/', function(req, res) {
-  mysql.createConnection({
+var sqlconnect =  mysql.createConnection({
       host: 'localhost',
       user: 'root',
       password: 'root',
-      database: 'database'
-  }).then(function(conn){
-    var result = conn.query('select * from Shop');
-    conn.end();
-    console.log(result);
-    res.send(result);
-  });
-});
-
+      database: 'inseDB'
+  });              
 // starts the server
 app.listen(8080, (err) => {
   if (err) console.error('Error starting server', err);
   else console.log('Server started on port 8080');
 });
+
+sqlconnect.connect();
+sqlconnect.query('Select * from Shop', function (error, results, fields) {
+  if (error) throw error;
+  console.log(results);
+});
+   
