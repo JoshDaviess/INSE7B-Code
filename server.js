@@ -12,7 +12,8 @@ var sqlconnect =  mysql.createConnection({
       user: 'root',
       password: 'root',
       database: 'inseDB'
-  });              
+  });
+
 // starts the server
 app.listen(8080, (err) => {
   if (err) console.error('Error starting server', err);
@@ -24,4 +25,3 @@ sqlconnect.query('Select * from Shop', function (error, results, fields) {
   if (error) throw error;
   console.log(results);
 });
-   
