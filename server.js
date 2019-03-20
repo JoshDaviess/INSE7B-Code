@@ -5,7 +5,7 @@ const app = express();
 const path = require('path');
 //const mysql = require('mysql');
 
-//app.use(express.static(path.join(__dirname + '/webpages')));
+app.use(express.static(path.join(__dirname + '/webpages')));
 
 //var sqlconnect =  mysql.createConnection({
 //      host: 'localhost',
