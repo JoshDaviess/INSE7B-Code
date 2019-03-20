@@ -1,3 +1,23 @@
+/* ========== General ========== */
+html body
+    {
+        background-color:  #E4B477;
+    }
+.flex-container {
+        display: flex;
+        justify-content: flex-end;
+       /* display: inline-block;*/
+
+}
+
+
+h1{color: whitesmoke;}
+
+
+
+
+
+/* ========== Navigation Bar ========== */
 .navbar-expand-md{
 		margin-bottom: 0;
 		border-radius: 1px;
@@ -18,30 +38,6 @@ nav.navbar {
   transition: all 0.4s;
 }
 
-button {
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btn-primary {
-        color: #fff;
-        background-color: #0088E0 ;
-        border-color: #E24C3B;
-        border-radius: 15x;
-        outline: none !important;
-        width: 80px;
-    
-    
-}
-.btn-primary:hover {
-  color: #fff;
-  border-color: #de1d39;
-}
-
-.btn-primary:focus, .btn-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
-}
 
 .navbar-toggler:focus,.navbar-toggler:active {
         outline: none !important;
@@ -69,10 +65,7 @@ button {
   border-radius: 3rem;
     
 }
-html body
-    {
-        background-color:  #E4B477;
-    }
+
 
 nav li a.background
     {
@@ -81,14 +74,48 @@ nav li a.background
     }
 
 
-.flex-container {
-        display: flex;
-        justify-content: flex-end;
-       /* display: inline-block;*/
+/* ========== Buttons ========== */
 
+button {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+.btn-primary {
+        color: #fff;
+        background-color: #0088E0 ;
+        border-color: #E24C3B;
+        border-radius: 15x;
+        outline: none !important;
+        width: 80px;
+    
+    
+}
+.btn-primary:hover {
+  color: #fff;
+  border-color: #de1d39;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
+}
+
+
+
+/* ========== Map ========== */
+#map {
+
+        height: 700px;  /* The height is 500 pixels */
+        width: 70%;  /* The width is the width of the web page */
+
+     }
+
+/* ========== Animations ========== */
+
+
 /*https://codepen.io/EvyatarDa/pen/waKXMd*/
-/* Top and Bottom borders go out */
+/* Top and Bottom borders go out 
 a:before,  a:after
 {
     position: absolute;
@@ -99,7 +126,7 @@ a:before,  a:after
     content: "";
     opacity: 0;
     transition: all 0.3s;
-    /*display: inline-block;*/
+   
     
 }
 
@@ -107,30 +134,20 @@ a:before
 {
     top: 0px;
     transform: translateY(10px);
-    /*display: inline-block;*/
+   
    
 }
 a:after
 {
     bottom: 0px;
     transform: translateY(-10px);
-    /*display: inline-block;*/
+    
     
 }
 a:hover:before, a:hover:after
 {
     opacity: 1;
     transform: translateY(0px);
-    /*display: inline-block;*/
+   
   
-}
-
-h1{color: whitesmoke;}
-
-
-#map {
-
-        height: 700px;  /* The height is 500 pixels */
-        width: 70%;  /* The width is the width of the web page */
-
-     }
+}*/
