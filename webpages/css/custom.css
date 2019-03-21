@@ -1,3 +1,29 @@
+/* ========== General ========== */
+html body
+    {
+        background-color:  #E4B477;
+    }
+.flex-container {
+        display: flex;
+        justify-content: flex-end;
+       /* display: inline-block;*/
+
+}
+
+
+h1{color: whitesmoke;}
+
+.bg-primary {
+  background-color: #0088e0 !important;
+}
+
+.Info{
+    
+    background-color: #FBF3EF;
+}
+
+
+/* ========== Navigation Bar ========== */
 .navbar-expand-md{
 		margin-bottom: 0;
 		border-radius: 1px;
@@ -5,91 +31,154 @@
 		font-size:1.1em;
 		border: 0;
         background-color: #E24C3B;
-
-
+        font-weight: bold;
+        color: 
 	}
+nav.navbar.active {
+        background: #fff;
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+}
+nav.navbar {
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+}
+
+
+.navbar-toggler:focus,.navbar-toggler:active {
+        outline: none !important;
+        box-shadow: none;
+
+}
+
 .navbar-brand{
-		position: relative;
-		flex: initial;
-		min-height: 50px;
-		padding-top: 10px;
-        padding-left: 10px;
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        width: 7.5rem;
+        
 	}
 
-html body
-    {
-        background-color:  #E4B477;
-    }
+.navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 3rem;
+
+}
+
 
 nav li a.background
     {
-       background-size: 0px;
-    }
-#link
-    {
-        /*display: inline-block;*/
-
+        background-size: 0px;
+        color: #fff !important;
     }
 
-#link:hover
-    {
-		color: #E24C3B !important;
-        background-color: #E4B477;
-        border-radius: 5px;
-        padding: 5px;
-        transition: .5s ease;
-        transition-property: width 100px;
-        font-weight: bold;
 
-	}
-.flex-container {
-        display: flex;
-        justify-content: flex-end;
-       /* display: inline-block;*/
+/* ========== Buttons ========== */
+
+button {
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+}
+.btn-primary {
+        color: #fff;
+        background-color: #0088E0 ;
+        border-color: #E24C3B;
+        border-radius: 15x;
+        outline: none !important;
+        width: 80px;
+    
+    
+}
+.btn-primary:hover {
+        color: #fff;
+        border-color: #de1d39;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(231, 71, 94, 0.5);
+}
+
+
+
+/* ========== Map ========== */
+#map {
+
+        height: 700px;  /* The height is 500 pixels */
+        width: 70%;  /* The width is the width of the web page */
+
+     }
+
+
+
+footer.main-footer {
+  padding: 7rem 0;
+  background-color: #E24C3B;
+  color: #fff;
+  padding-bottom: 0;
+}
+
+.footer-logo {
+  width: 7.5rem;
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0.3rem 0;
+}
+
+.footer-link:hover, .footer-link:focus {
+        color: #0088E0;
 
 }
+
+/* ========== Animations ========== */
+
+
 /*https://codepen.io/EvyatarDa/pen/waKXMd*/
-/* Top and Bottom borders go out */
+/* Top and Bottom borders go out 
 a:before,  a:after
 {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-    /*display: inline-block;*/
-    max-width: inherit;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: #FFF;
+        content: "";
+        opacity: 0;
+        transition: all 0.3s;
+   
+    
 }
 
 a:before
 {
-    top: 0px;
-    transform: translateY(10px);
-    /*display: inline-block;*/
-    max-width: inherit;
+        top: 0px;
+        transform: translateY(10px);
+   
+   
 }
 a:after
 {
-    bottom: 0px;
-    transform: translateY(-10px);
-    /*display: inline-block;*/
-    max-width: inherit;
+        bottom: 0px;
+        transform: translateY(-10px);
+    
+    
 }
 a:hover:before, a:hover:after
 {
-    opacity: 1;
-    transform: translateY(0px);
-    /*display: inline-block;*/
-    max-width: inherit;
-}
-
-h1{color: whitesmoke;}
-
-
-#map {
-				height: 700px;  /* The height is 700 pixels */
-        width: 70%;  /* The width is the width of the web page */
-     }
+        opacity: 1;
+        transform: translateY(0px);
+   
+  
+}*/

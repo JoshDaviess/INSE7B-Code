@@ -11,35 +11,30 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<!-- Custom styles --->
 	<link href="css/custom.css" rel="stylesheet">
-
-
+	
 </head>
 <body>
+
     <!--- NavBar -->
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
 		<!-- Brand -->
 		<a class="navbar-brand" href="index.html">FindMyBarber</a>
-
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-    <div class="collapse navbar-collapse flex-container" id="collapsibleNavbar">
-       <ul class="navbar-nav text-right">
-            <div class="link">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html" id="link">Home</a>
-            </li></div>
-            <div class="link">
-            <li class="nav-item">
-                <a class="nav-link" href="map.html" id="link">Map</a>
-            </li></div>
-            <div class="link">
-            <li class="nav-item">
-                <a class="nav-link" href="indexBarber.html" id="link">BarberMode</a>
-            </li></div>
-        </ul>
-    </div>
+        <div class="collapse navbar-collapse flex-container" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="index.html" class="nav-link active">Home</a></li>
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="map.html" class="nav-link">Map</a></li>
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="indexBarber.html" class="nav-link">BarberMode</a></li>
+                  <!-- Link-->
+            <a href="#" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Login </a>
+            </ul>
+        </div>
     </nav>
     <!--- End of NavBar -->
         
@@ -83,9 +78,79 @@
 		</a>
 	</div>
     <!--- End of Carousel --->
-	<h1>Greeting page</h1>
-	
 
+
+   <!-- Info Section -->
+ <section class="Info">
+      <div class="container">
+        <div class="text-center">
+          <h2>How it Works</h2>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p class="lead text-muted mt-2">Streamline your barber Experinces in 3 easy steps!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+              <div class="box text-center">
+                <div class="icon d-flex align-items-end"></div>
+                <h3 class="h4">Locate Barber</h3>
+                <p class="text-small font-weight-light">See all nearby barbershops in our interactive Map!</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box text-center">
+                <div class="icon d-flex align-items-end"></div>
+                <h3 class="h4">Workout the Details</h3>
+                <p class="text-small font-weight-light">See the barbershop's prices, opening hours, address and even waiting time!</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box text-center">
+                <div class="icon d-flex align-items-end"></div>
+                <h3 class="h4">Subscribe</h3>
+                <p class="text-small font-weight-light"> Enroll in queue to let the barbershop you are coming to cut down on your waiting time!</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--- End of Info Section --->
+	 <!-- Discription Section -->
+    <section class="bg-primary text-white">
+      <div class="container">
+        <div class="text-center">
+          <h2>Find Your Barber Now</h2>
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <p class="lead text-white mt-2">Do barbery things now cuz your'e bz but need to do barbery stuff</p>
+            </div>
+          </div><a href="map.html" class="btn btn-outline-light">Start here</a>
+        </div>
+      </div>
+    </section>
+    <!--- End of Discreption --->
+<section><div></div></section>
+    <!--- Footer --->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-5 mb-lg-0">
+            <div class="footer-logo"><img src="" class="img-fluid"></div>
+          </div>
+          <div class="col-lg-3 mb-5 mb-lg-0">
+            <h5 class="footer-heading">Site pages</h5>
+            <ul class="list-unstyled">
+              <li> <a href="index.html" class="footer-link">Home</a></li>
+              <li> <a href="map.html" class="footer-link">Map</a></li>
+              <li> <a href="indexBarber.html" class="footer-link">BarberMode</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--- End of Footer --->
 
 </body>
 </html>

@@ -17,33 +17,28 @@
 
 <body>
 	<header class="landing">
-	<!--- NavBar -->
-		<nav class="navbar navbar-expand-md navbar-dark">
-			<!-- Brand -->
-			<a class="navbar-brand" href="index.html">FindMyBarber</a>
-
-			<!-- Toggler/collapsibe Button -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		<div class="collapse navbar-collapse flex-container" id="collapsibleNavbar">
-		   <ul class="navbar-nav text-right">
-				<div class="link">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html" id="link">Home</a>
-				</li></div>
-				<div class="link">
-				<li class="nav-item">
-					<a class="nav-link" href="map.html" id="link">Map</a>
-				</li></div>
-				<div class="link">
-				<li class="nav-item">
-					<a class="nav-link active" href="indexBarber.html" id="link">BarberMode</a>
-				</li></div>
-			</ul>
-		</div>
-		</nav>
-		<!--- End of NavBar -->
+    <!--- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+		<!-- Brand -->
+		<a class="navbar-brand" href="index.html">FindMyBarber</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-container" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="map.html" class="nav-link">Map</a></li>
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="indexBarber.html" class="nav-link active">BarberMode</a></li>
+                  <!-- Link-->
+            <a href="link.html" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Login </a>
+            </ul>
+        </div>
+    </nav>
+    <!--- End of NavBar -->
 
 			<div class="headerContent">
 				<h1>'Barbershop name'</h1>
