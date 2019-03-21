@@ -20,8 +20,42 @@ app.listen(8080, (err) => {
   else console.log('Server started on port 8080');
 });
 
-sqlconnect.connect();
-sqlconnect.query('Select * from Shop', function (error, results, fields) {
-  if (error) throw error;
-  console.log(results);
+var result = [];
+var  getLatitudeFromDB = function(callback) {
+
+sqlconnect.query('SELECT shop_Latitude FROM Shop', function(err, res, fields)
+{
+    if (err)  return callback(err);
+     if(res.length){
+    for(var i = 0; i<res.length; i++ ){
+                    result.push(res[i]);
+        }
+     }
+   callback(null, result);
 });
+};
+var  getLongitudeFromDB = function(callback) {
+sqlconnect.query('SELECT shop_Longitude FROM Shop', function(err, res, fields)
+{
+    if (err)  return callback(err);
+     if(res.length){
+    for(var i = 0; i<res.length; i++ ){
+                    result.push(res[i]);
+        }
+     }
+   callback(null, result);
+});
+};
+
+console.log("Call shop_Latitude");
+getLatitudeFromDB(function (err, result) {
+  if (err) console.log("Database error!");
+  else console.log(result);
+});
+
+
+//console.log("Call shop_Longitude");
+//getLongitudeFromDB(function (err, result) {
+//  if (err) console.log("Database error!");
+//  else console.log(result);
+//});
