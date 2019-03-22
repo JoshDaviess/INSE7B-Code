@@ -142,6 +142,48 @@ footer.main-footer {
 
 }
 
+/* ========== BarbMainGrid ========== */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 30px 5px;
+	padding: 10px;
+	background-color: rgb(223, 249, 251);
+	border: 2px solid rgb(83, 92, 104);
+	width: 700px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.grid-container > div {
+	background-color: rgb(223, 249, 251);
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	border: 2px solid rgb(83, 92, 104);
+	color: rgb(83, 92, 104);
+}
+
+.gheader {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+.gitem {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.gwait {
+	grid-column: span 2;
+}
+
+.gmodify {
+	grid-column: span 2;
+	border: none;
+}
+
 /* ========== Animations ========== */
 
 
