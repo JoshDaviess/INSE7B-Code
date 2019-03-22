@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background: brown;
 }
 
 #page-wrap {
@@ -8,19 +8,26 @@ body {
 }
 h1{
   text-align: center;
-  background-color: DodgerBlue;
+  background-color: white;
 }
 
 .container{
   width: 450;
   height: 600;
-  background-color: DodgerBlue;
+  background-color: white;
 
+}
+
+.container2 {
+  width: 350;
+  height: 425;
+  margin: 0 auto;
+  background-color: brown;
 }
 
 
 button{
-  background-color: black;
+  background-color: brown;
  border: none;
  color: white;
  padding: 15px 32px;
