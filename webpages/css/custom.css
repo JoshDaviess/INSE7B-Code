@@ -18,7 +18,7 @@ h1{color: whitesmoke;}
 }
 
 .Info{
-    
+
     background-color: #FBF3EF;
 }
 
@@ -32,7 +32,7 @@ h1{color: whitesmoke;}
 		border: 0;
         background-color: #E24C3B;
         font-weight: bold;
-        color: 
+        color:
 	}
 nav.navbar.active {
         background: #fff;
@@ -58,7 +58,7 @@ nav.navbar {
         margin-right: 1rem;
         font-size: 1.25rem;
         width: 7.5rem;
-        
+
 	}
 
 .navbar-toggler {
@@ -94,8 +94,8 @@ button {
         border-radius: 15x;
         outline: none !important;
         width: 80px;
-    
-    
+
+
 }
 .btn-primary:hover {
         color: #fff;
@@ -117,6 +117,12 @@ button {
 
      }
 
+#shop1 {
+  float: right;
+  padding-right: 10px;
+  padding-top: 10px;
+  display: none;
+}
 
 
 footer.main-footer {
@@ -187,7 +193,7 @@ footer.main-footer {
 
 
 /*https://codepen.io/EvyatarDa/pen/waKXMd*/
-/* Top and Bottom borders go out 
+/* Top and Bottom borders go out
 a:before,  a:after
 {
         position: absolute;
@@ -198,28 +204,28 @@ a:before,  a:after
         content: "";
         opacity: 0;
         transition: all 0.3s;
-   
-    
+
+
 }
 
 a:before
 {
         top: 0px;
         transform: translateY(10px);
-   
-   
+
+
 }
 a:after
 {
         bottom: 0px;
         transform: translateY(-10px);
-    
-    
+
+
 }
 a:hover:before, a:hover:after
 {
         opacity: 1;
         transform: translateY(0px);
-   
-  
+
+
 }*/

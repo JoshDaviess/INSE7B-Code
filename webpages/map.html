@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Map</title>
 	<meta charset="utf-8">
@@ -11,12 +12,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<!-- Custom styles --->
 	<link href="css/custom.css" rel="stylesheet">
-
-
-
 </head>
-<body>
 
+<body>
     <!--- NavBar -->
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
 		<!-- Brand -->
@@ -40,50 +38,71 @@
     </nav>
     <!--- End of NavBar -->
 
-    <h3>Google Maps</h3>
-
+		<div id="shop1">
+			Test
+		</div>
 
     <!--The div element for the map -->
     <div id="map"></div>
+		<script>
+		    // Initialize and add the map
+		    function initMap() {
+		    // The center point of Portsmouth (50.7953904,-1.07100002)
+		    var center = {lat: 50.7953904, lng: -1.0710000};
+		    // The map, centered at Portsmouth
+		    var map = new google.maps.Map(
+		        document.getElementById('map'), {zoom: 14, center: center});
+		    // The marker, positioned at Portsmouth
+				var shop1 = new google.maps.Marker({position: {lat: 50.786600, lng: -1.072379}, map: map, animation: google.maps.Animation.DROP});
+				shop1.addListener('click', showMenu(shop1));
+				var shop2 = new google.maps.Marker({position: {lat: 50.793546, lng: -1.076251}, map: map, animation: google.maps.Animation.DROP});
+				shop2.addListener('click', showMenu(shop2));
+				var shop3 = new google.maps.Marker({position: {lat: 50.790621, lng: -1.082350}, map: map, animation: google.maps.Animation.DROP});
+				shop3.addListener('click', showMenu(shop3));
+				var shop4 = new google.maps.Marker({position: {lat: 50.784494, lng: -1.077417}, map: map, animation: google.maps.Animation.DROP});
+				shop4.addListener('click', showMenu(shop4));
+				var shop5 = new google.maps.Marker({position: {lat: 50.782527, lng: -1.087824}, map: map, animation: google.maps.Animation.DROP});
+				shop5.addListener('click', showMenu(shop5));
+				var shop6 = new google.maps.Marker({position: {lat: 50.786894, lng: -1.079205}, map: map, animation: google.maps.Animation.DROP});
+				shop6.addListener('click', showMenu(shop6));
+				var shop7 = new google.maps.Marker({position: {lat: 50.786268, lng: -1.069937}, map: map, animation: google.maps.Animation.DROP});
+				shop7.addListener('click', showMenu(shop7));
+				var shop8 = new google.maps.Marker({position: {lat: 50.783789, lng: -1.070452}, map: map, animation: google.maps.Animation.DROP});
+				shop8.addListener('click', showMenu(shop8));
+				var shop9 = new google.maps.Marker({position: {lat: 50.788279, lng: -1.055453}, map: map, animation: google.maps.Animation.DROP});
+				shop9.addListener('click', showMenu(shop9));
+				var shop10 = new google.maps.Marker({position: {lat: 50.781633, lng: -1.072783}, map: map, animation: google.maps.Animation.DROP});
+				shop10.addListener('click', showMenu(shop10));
+				}
 
-<script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Portsmouth (50.7951868,-1.0941392)
-    var portsmouth = {lat: 50.7951868, lng: -1.0941392};
-    // The map, centered at Portsmouth
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 15, center: portsmouth});
-    // The marker, positioned at Portsmouth
-    //var marker = new google.maps.Marker({position: portsmouth, map: map});
-    }
-  </script>
+				function showMenu(shopName) {
+					console.log("Click event")
+				}
+		  </script>
 
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Fd1TTEwH1qdMNvYdNJh7XVahBHc47J4&callback=initMap">
-  </script>
+		  <script async defer
+		    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Fd1TTEwH1qdMNvYdNJh7XVahBHc47J4&callback=initMap">
+		  </script>
 
-
-
-    <!--- Footer --->
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="footer-logo"><img src="" class="img-fluid"></div>
-          </div>
-          <div class="col-lg-3 mb-5 mb-lg-0">
-            <h5 class="footer-heading">Site pages</h5>
-            <ul class="list-unstyled">
-              <li> <a href="index.html" class="footer-link">Home</a></li>
-              <li> <a href="map.html" class="footer-link">Map</a></li>
-              <li> <a href="indexBarber.html" class="footer-link">BarberMode</a></li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--- End of Footer --->
+	    <!--- Footer --->
+	    <footer class="main-footer">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-lg-3 mb-5 mb-lg-0">
+	            <div class="footer-logo"><img src="" class="img-fluid"></div>
+	          </div>
+	          <div class="col-lg-3 mb-5 mb-lg-0">
+	            <h5 class="footer-heading">Site pages</h5>
+	            <ul class="list-unstyled">
+	              <li> <a href="index.html" class="footer-link">Home</a></li>
+	              <li> <a href="map.html" class="footer-link">Map</a></li>
+	              <li> <a href="indexBarber.html" class="footer-link">BarberMode</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	    </footer>
+	    <!--- End of Footer --->
 </body>
+
 </html>
