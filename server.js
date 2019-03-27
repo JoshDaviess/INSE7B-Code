@@ -34,12 +34,18 @@ app.get('/latitude', function (req, res) {
       });
   });
 
-  app.get('/barber/:barbid', function (req, res) {
-          sqlconnect.query('SELECT * FROM inseDB.Shop where shopID = ?', req.params.barbid, function(err, recordset) {
-            if(err) console.log(err);
-            res.end(JSON.stringify(recordset)); // Result in JSON format
-        });
-    });
+app.get('/barber/:barbid', function (req, res) {
+        sqlconnect.query('SELECT * FROM inseDB.Shop where shopID = ?', req.params.barbid, function(err, recordset) {
+          if(err) console.log(err);
+          res.end(JSON.stringify(recordset)); // Result in JSON format
+      });
+  });
+app.get('/custAdd/:barbid', function (req, res) {
+        sqlconnect.query('UPDATE Shop SET shop_Customers = shop_Customers WHERE shopID = ?', req.params.barbid, function(err) {
+          if(err) console.log(err);
+          else return("Success"); // Result in JSON format
+      });
+  });
 // var result = [];
 // var  getLatitudeFromDB = function(callback) {
 //
