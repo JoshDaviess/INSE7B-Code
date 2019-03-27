@@ -11,6 +11,7 @@ shop_Longitude decimal(8, 6),
 shop_Barbers smallint,
 shop_Customers smallint,
 shop_WaitTime time,
+shop_Open boolean DEFAULT false,
 primary key (ShopID)
 );
 
@@ -54,8 +55,8 @@ foreign key (shopID) references Shop(shopID)
 
 --User database
 CREATE TABLE USERS
-     ( 
-     UserID smallint not null auto_increment, 
+     (
+     UserID smallint not null auto_increment,
      USER_NAME VARCHAR (18) ,
      FIRST_NAME VARCHAR (30)NOT NULL,
      LAST_NAME VARCHAR(30)NOT NULL,
@@ -98,10 +99,8 @@ INSERT INTO USERS VALUES(NULL,'portsmasugang' , 'Kofi' , 'kingston' ,' JohnCena@
 
 --Appointment table--
 CREATE TABLE Appointments(
-     AppointmentID smallint not null auto_increment, 
-     Date_Created TIMESTAMP , 
-     Appointment_Date TIMESTAMP, 
+     AppointmentID smallint not null auto_increment,
+     Date_Created TIMESTAMP ,
+     Appointment_Date TIMESTAMP,
      primary key(AppointmentID)
      );
-
-
