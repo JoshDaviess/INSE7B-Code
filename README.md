@@ -5,5 +5,7 @@
 - `index.html` – homepage
 - `map.html` – map page
 
-
--'server'- http://35.241.170.46/index.html
+### Usernames
+- 'JoshDaviess' - Joshua Davies
+- 'GaryL98' - Gary Leung
+- 'Emeka815208' - Emeka Nwaenie
