@@ -41,9 +41,29 @@ app.get('/barber/:barbid', function (req, res) {
       });
   });
 app.get('/custAdd/:barbid', function (req, res) {
-        sqlconnect.query('UPDATE Shop SET shop_Customers = shop_Customers WHERE shopID = ?', req.params.barbid, function(err) {
+        sqlconnect.query('UPDATE Shop SET shop_Customers = shop_Customers + 1 WHERE shopID = ?', req.params.barbid, function(err, recordset) {
           if(err) console.log(err);
-          else return("Success"); // Result in JSON format
+          res.end(JSON.stringify(recordset)); // Result in JSON format
+      });
+  });
+
+app.get('/custRem/:barbid', function (req, res) {
+        sqlconnect.query('UPDATE Shop SET shop_Customers = shop_Customers - 1 WHERE shopID = ?', req.params.barbid, function(err, recordset) {
+          if(err) console.log(err);
+          res.end(JSON.stringify(recordset)); // Result in JSON format
+      });
+  });
+app.get('/workAdd/:barbid', function (req, res) {
+        sqlconnect.query('UPDATE Shop SET shop_Barbers = shop_Barbers + 1 WHERE shopID = ?', req.params.barbid, function(err, recordset) {
+          if(err) console.log(err);
+          res.end(JSON.stringify(recordset)); // Result in JSON format
+      });
+  });
+
+app.get('/workRem/:barbid', function (req, res) {
+        sqlconnect.query('UPDATE Shop SET shop_Barbers = shop_Barbers - 1 WHERE shopID = ?', req.params.barbid, function(err, recordset) {
+          if(err) console.log(err);
+          res.end(JSON.stringify(recordset)); // Result in JSON format
       });
   });
 // var result = [];
