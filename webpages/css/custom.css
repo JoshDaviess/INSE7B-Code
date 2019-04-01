@@ -112,18 +112,9 @@ button {
 /* ========== Map ========== */
 #map {
 
-        height: 700px;  /* The height is 500 pixels */
-        width: 70%;  /* The width is the width of the web page */
-
+        height: 700px;  /* The height is 700 pixels */
+        width: 80%;  /* The width is 80% of the web page */
      }
-
-#shop1 {
-  float: right;
-  padding-right: 10px;
-  padding-top: 10px;
-  display: none;
-}
-
 
 footer.main-footer {
   padding: 7rem 0;
@@ -187,6 +178,10 @@ footer.main-footer {
 .gmodify {
 	grid-column: span 2;
 	border: none;
+}
+
+#shop1, #shop2, #shop3, #shop4, #shop5, #shop6, #shop7, #shop8, #shop9, #shop10{
+  display: none;
 }
 
 /* ========== Animations ========== */

@@ -38,10 +38,7 @@
     </nav>
     <!--- End of NavBar -->
 
-		<div id="shop1">
-			Test
-		</div>
-      <div class="container"> 
+      <div class="container">
         <div class= "row">
             <!--The div element for the map -->
             <div id="map" class="col-sm-8">
@@ -55,44 +52,234 @@
                         document.getElementById('map'), {zoom: 14, center: center});
                     // The marker, positioned at Portsmouth
                         var shop1 = new google.maps.Marker({position: {lat: 50.786600, lng: -1.072379}, map: map, animation: google.maps.Animation.DROP});
-                        shop1.addListener('click', showMenu(shop1));
+                        google.maps.event.addListener(shop1, 'click', function (shop1, i) {
+													if ($('#shop1').css('display') == 'block') {
+									            $('#shop1').css('display', 'none');
+									        } else {
+									            $('#shop1').css('display', 'block');
+															$('#shop2').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop9').css('display', 'none');
+															$('#shop10').css('display', 'none');
+									        }
+									    		});
                         var shop2 = new google.maps.Marker({position: {lat: 50.793546, lng: -1.076251}, map: map, animation: google.maps.Animation.DROP});
-                        shop2.addListener('click', showMenu(shop2));
+												google.maps.event.addListener(shop2, 'click', function (shop2, i) {
+													if ($('#shop2').css('display') == 'block') {
+															$('#shop2').css('display', 'none');
+													} else {
+															$('#shop2').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop9').css('display', 'none');
+															$('#shop10').css('display', 'none');
+													}
+													});
                         var shop3 = new google.maps.Marker({position: {lat: 50.790621, lng: -1.082350}, map: map, animation: google.maps.Animation.DROP});
-                        shop3.addListener('click', showMenu(shop3));
+												google.maps.event.addListener(shop3, 'click', function (shop3, i) {
+													if ($('#shop3').css('display') == 'block') {
+															$('#shop3').css('display', 'none');
+													} else {
+															$('#shop3').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop2').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop9').css('display', 'none');
+															$('#shop10').css('display', 'none');
+													}
+													});
                         var shop4 = new google.maps.Marker({position: {lat: 50.784494, lng: -1.077417}, map: map, animation: google.maps.Animation.DROP});
-                        shop4.addListener('click', showMenu(shop4));
+												google.maps.event.addListener(shop4, 'click', function (shop4, i) {
+													if ($('#shop4').css('display') == 'block') {
+															$('#shop4').css('display', 'none');
+													} else {
+															$('#shop4').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop2').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop9').css('display', 'none');
+															$('#shop10').css('display', 'none');
+													}
+													});
                         var shop5 = new google.maps.Marker({position: {lat: 50.782527, lng: -1.087824}, map: map, animation: google.maps.Animation.DROP});
-                        shop5.addListener('click', showMenu(shop5));
+												google.maps.event.addListener(shop5, 'click', function (shop5, i) {
+													if ($('#shop5').css('display') == 'block') {
+															$('#shop5').css('display', 'none');
+													} else {
+															$('#shop5').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop2').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop9').css('display', 'none');
+															$('#shop10').css('display', 'none');
+													}
+													});
                         var shop6 = new google.maps.Marker({position: {lat: 50.786894, lng: -1.079205}, map: map, animation: google.maps.Animation.DROP});
-                        shop6.addListener('click', showMenu(shop6));
+												google.maps.event.addListener(shop6, 'click', function (shop6, i) {
+													if ($('#shop6').css('display') == 'block') {
+															$('#shop6').css('display', 'none');
+													} else {
+															$('#shop6').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop2').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop9').css('display', 'none');
+															$('#shop10').css('display', 'none');
+													}
+													});
                         var shop7 = new google.maps.Marker({position: {lat: 50.786268, lng: -1.069937}, map: map, animation: google.maps.Animation.DROP});
-                        shop7.addListener('click', showMenu(shop7));
+												google.maps.event.addListener(shop7, 'click', function (shop7, i) {
+													if ($('#shop7').css('display') == 'block') {
+															$('#shop7').css('display', 'none');
+													} else {
+															$('#shop7').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop2').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop9').css('display', 'none');
+															$('#shop10').css('display', 'none');
+													}
+													});
                         var shop8 = new google.maps.Marker({position: {lat: 50.783789, lng: -1.070452}, map: map, animation: google.maps.Animation.DROP});
-                        shop8.addListener('click', showMenu(shop8));
+												google.maps.event.addListener(shop8, 'click', function (shop8, i) {
+													if ($('#shop8').css('display') == 'block') {
+															$('#shop8').css('display', 'none');
+													} else {
+															$('#shop8').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop2').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop9').css('display', 'none');
+															$('#shop10').css('display', 'none');
+													}
+													});
                         var shop9 = new google.maps.Marker({position: {lat: 50.788279, lng: -1.055453}, map: map, animation: google.maps.Animation.DROP});
-                        shop9.addListener('click', showMenu(shop9));
+												google.maps.event.addListener(shop9, 'click', function (shop9, i) {
+													if ($('#shop9').css('display') == 'block') {
+															$('#shop9').css('display', 'none');
+													} else {
+															$('#shop9').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop2').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop10').css('display', 'none');
+													}
+													});
                         var shop10 = new google.maps.Marker({position: {lat: 50.781633, lng: -1.072783}, map: map, animation: google.maps.Animation.DROP});
-                        shop10.addListener('click', showMenu(shop10));
-                        }
+												google.maps.event.addListener(shop10, 'click', function (shop10, i) {
+													if ($('#shop10').css('display') == 'block') {
+															$('#shop10').css('display', 'none');
+													} else {
+															$('#shop10').css('display', 'block');
+															$('#shop1').css('display', 'none');
+															$('#shop2').css('display', 'none');
+															$('#shop3').css('display', 'none');
+															$('#shop4').css('display', 'none');
+															$('#shop5').css('display', 'none');
+															$('#shop6').css('display', 'none');
+															$('#shop7').css('display', 'none');
+															$('#shop8').css('display', 'none');
+															$('#shop9').css('display', 'none');
+													}
+													});
+												}
 
-                        function showMenu(shopName) {
-                            console.log("Click event")
-                        }
                   </script>
 
                   <script async defer
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Fd1TTEwH1qdMNvYdNJh7XVahBHc47J4&callback=initMap">
                   </script>
                   </div>
-                <div class="col-sm-4 jumbotron">
-                       <h2 class="display-3">Barber Info</h2>
+
+								<div id="shop1" class="col-sm-4 jumbotron">
+                       <h2>Barber Info1</h2>
                        <p>Barber info is displayed here</p>
-                       <p class="lead">
-                           <a class="btn btn-primary btn-sm" href="#" role="button">Subscribe</a>
-                       </p>
                 </div>
-          
+
+								<div id="shop2" class="col-sm-4 jumbotron">
+                       <h2>Barber Info2</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
+								<div id="shop3" class="col-sm-4 jumbotron">
+                       <h2>Barber Info3</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
+								<div id="shop4" class="col-sm-4 jumbotron">
+                       <h2>Barber Info4</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
+								<div id="shop5" class="col-sm-4 jumbotron">
+                       <h2>Barber Info5</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
+								<div id="shop6" class="col-sm-4 jumbotron">
+                       <h2>Barber Info6</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
+								<div id="shop7" class="col-sm-4 jumbotron">
+                       <h2>Barber Info7</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
+								<div id="shop8" class="col-sm-4 jumbotron">
+                       <h2>Barber Info8</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
+								<div id="shop9" class="col-sm-4 jumbotron">
+                       <h2>Barber Info9</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
+								<div id="shop10" class="col-sm-4 jumbotron">
+                       <h2>Barber Info10</h2>
+                       <p>Barber info is displayed here</p>
+                </div>
+
         </div>
       </div>
 	    <!--- Footer --->
