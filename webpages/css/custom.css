@@ -188,7 +188,9 @@ footer.main-footer {
 
 
 /*https://codepen.io/EvyatarDa/pen/waKXMd*/
-/* Top and Bottom borders go out
+/* Top and Bottom borders go out*/
+
+a{position:relative}
 a:before,  a:after
 {
         position: absolute;
@@ -223,4 +225,4 @@ a:hover:before, a:hover:after
         transform: translateY(0px);
 
 
-}*/
+}
