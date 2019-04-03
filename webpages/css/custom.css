@@ -22,6 +22,33 @@ h1{color: whitesmoke;}
     background-color: #FBF3EF;
 }
 
+/* ========== Alerts ========== */
+
+<div class="alert alert-success">
+   Barbers Increased.
+</div>
+
+<div class="alert alert-success">
+   Barbers decreased.
+</div>
+
+<div class="alert alert-success">
+   Customer Queue Increased.
+</div>
+
+<div class="alert alert-success">
+   Customer Queue decreased.
+</div>
+
+/* Error Alert*/
+
+<div class="alert alert-danger">
+  <strong>oh oh!</strong>something went wrong.
+</div>
+
+
+
+
 
 /* ========== Navigation Bar ========== */
 .navbar-expand-md{
