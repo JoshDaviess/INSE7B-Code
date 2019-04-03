@@ -39,97 +39,47 @@
     <!--- End of NavBar -->
 
       <div class="container-fluid">
-        
+
             <!--The div element for the map -->
 
 						<div id="shop1" class="jumbotron">
-									 <h2>1</h2>
-									 <p>Opening times: </p>
-									 <p>Pricing: </p>
-									 <p>Barbers working: </p>
-									 <p>Customers waiting: </p>
-									 <p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop2" class="jumbotron">
-							<h2>2</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop3" class="jumbotron">
-							<h2>3</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop4" class="jumbotron">
-							<h2>4</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop5" class="jumbotron">
-							<h2>5</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop6" class="jumbotron">
-							<h2>6</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop7" class="jumbotron">
-							<h2>7</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop8" class="jumbotron">
-							<h2>8</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop9" class="jumbotron">
-							<h2>9</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
 						<div id="shop10" class="jumbotron">
-							<h2>10</h2>
-							<p>Opening times: </p>
-							<p>Pricing: </p>
-							<p>Barbers working: </p>
-							<p>Customers waiting: </p>
-							<p>Waiting time: </p>
+							<h2>Could not fetch data</h2>
 						</div>
 
             <div id="map" class="">
@@ -158,7 +108,7 @@
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
-															getData();
+															getData(1, "#shop1");
 									        }
 									    		});
                         var shop2 = new google.maps.Marker({position: {lat: 50.793546, lng: -1.076251}, map: map, animation: google.maps.Animation.DROP});
@@ -176,6 +126,7 @@
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData(2, "#shop2");
 													}
 													});
                         var shop3 = new google.maps.Marker({position: {lat: 50.790621, lng: -1.082350}, map: map, animation: google.maps.Animation.DROP});
@@ -193,6 +144,7 @@
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData(3, "#shop3");
 													}
 													});
                         var shop4 = new google.maps.Marker({position: {lat: 50.784494, lng: -1.077417}, map: map, animation: google.maps.Animation.DROP});
@@ -210,6 +162,7 @@
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData(4, "#shop4");
 													}
 													});
                         var shop5 = new google.maps.Marker({position: {lat: 50.782527, lng: -1.087824}, map: map, animation: google.maps.Animation.DROP});
@@ -227,6 +180,7 @@
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData(5, "#shop5");
 													}
 													});
                         var shop6 = new google.maps.Marker({position: {lat: 50.786894, lng: -1.079205}, map: map, animation: google.maps.Animation.DROP});
@@ -244,6 +198,7 @@
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData(6, "#shop6");
 													}
 													});
                         var shop7 = new google.maps.Marker({position: {lat: 50.786268, lng: -1.069937}, map: map, animation: google.maps.Animation.DROP});
@@ -261,6 +216,7 @@
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData(7, "#shop7");
 													}
 													});
                         var shop8 = new google.maps.Marker({position: {lat: 50.783789, lng: -1.070452}, map: map, animation: google.maps.Animation.DROP});
@@ -278,6 +234,7 @@
 															$('#shop7').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData(8, "#shop8");
 													}
 													});
                         var shop9 = new google.maps.Marker({position: {lat: 50.788279, lng: -1.055453}, map: map, animation: google.maps.Animation.DROP});
@@ -295,6 +252,7 @@
 															$('#shop7').css('display', 'none');
 															$('#shop8').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData(9, "#shop9");
 													}
 													});
                         var shop10 = new google.maps.Marker({position: {lat: 50.781633, lng: -1.072783}, map: map, animation: google.maps.Animation.DROP});
@@ -312,15 +270,14 @@
 															$('#shop7').css('display', 'none');
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
+															getData(10, "#shop10");
 													}
 													});
 												}
 
-												var x = document.querySelector('#shop1');
-
-												function getData() {
-												console.log("hello world");
-												x.textContent = "hello world"
+												function getData(shopID, qSelector) {
+												var display_out = "<h2>" + "Shop name: " + shopID + "</h2>" + "<br>" + "Opening times: " + "<br>" + "Pricing: " + "<br>" + "Barbers working: " + "<br>" + "Customers waiting: " + "<br>" + "Waiting time: ";
+												document.querySelector(qSelector).innerHTML = display_out;
 												};
 
                   </script>
@@ -329,7 +286,7 @@
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Fd1TTEwH1qdMNvYdNJh7XVahBHc47J4&callback=initMap">
                   </script>
                   </div>
-        
+
       </div>
 	    <!--- Footer --->
 	    <footer class="main-footer">
