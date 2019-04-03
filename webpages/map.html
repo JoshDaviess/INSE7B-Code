@@ -84,6 +84,14 @@
 
             <div id="map" class="">
                 <script>
+										const mysql = require('mysql');
+
+										var sqlconnect =  mysql.createConnection({
+										      host: 'localhost',
+										      user: 'root',
+										      password: 'root',
+										      database: 'inseDB'
+										  });
 
                     // Initialize and add the map
                     function initMap() {
@@ -276,7 +284,11 @@
 												}
 
 												function getData(shopID, qSelector) {
-												var display_out = "<h2>" + "Shop name: " + shopID + "</h2>" + "<br>" + "Opening times: " + "<br>" + "Pricing: " + "<br>" + "Barbers working: " + "<br>" + "Customers waiting: " + "<br>" + "Waiting time: ";
+												var shopName = sqlconnect.query(`select shop_Name from inseDB.Shop where shopID = ${shopID}`, function(err, recordset) {
+								            if(err) console.log(err);
+								            res.end(JSON.stringify(recordset)); // Result in JSON format
+								        });
+												var display_out = "<h2>" + "Shop name: " + shopName + "</h2>" + "<br>" + "Opening times: " + "<br>" + "Pricing: " + "<br>" + "Barbers working: " + "<br>" + "Customers waiting: " + "<br>" + "Waiting time: ";
 												document.querySelector(qSelector).innerHTML = display_out;
 												};
 
