@@ -21,6 +21,14 @@ h1{color: whitesmoke;}
 
     background-color: #FBF3EF;
 }
+.jumbotron{
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.1rem;
+        margin: 0 auto 0 auto;
+        margin-bottom: 10px;
+        
+}
 
 /* ========== Alerts ========== */
 
@@ -152,8 +160,11 @@ button {
 /* ========== Map ========== */
 #map {
 
-        height: 700px;  /* The height is 700 pixels */
+        height: 600px;  /* The height is 700 pixels */
         width: 80%;  /* The width is 80% of the web page */
+        margin: 0 auto 0 auto;
+        margin-bottom: 10px;
+        
      }
 
 footer.main-footer {
