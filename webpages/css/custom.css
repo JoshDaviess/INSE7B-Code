@@ -24,28 +24,41 @@ h1{color: whitesmoke;}
 
 /* ========== Alerts ========== */
 
-<div class="alert alert-success">
-   Barbers Increased.
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+		Barber queue increased.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
 </div>
 
-<div class="alert alert-success">
-   Barbers decreased.
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+		Barber queue decreased.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
 </div>
 
-<div class="alert alert-success">
-   Customer Queue Increased.
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+		Customer queue increased.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
 </div>
 
-<div class="alert alert-success">
-   Customer Queue decreased.
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+		Customer queue decreased.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
 </div>
 
 /* Error Alert*/
-
-<div class="alert alert-danger">
-  <strong>oh oh!</strong>something went wrong.
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		 <strong>oh oh!</strong> something went wrong.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
 </div>
-
 
 
 
