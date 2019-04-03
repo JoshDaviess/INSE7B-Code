@@ -41,25 +41,100 @@
       <div class="container">
         <div class= "row">
             <!--The div element for the map -->
+
+						<div id="shop1" class="col-sm-4 jumbotron">
+									 <h2>1</h2>
+									 <p>Opening times: </p>
+									 <p>Pricing: </p>
+									 <p>Barbers working: </p>
+									 <p>Customers waiting: </p>
+									 <p>Waiting time: </p>
+						</div>
+
+						<div id="shop2" class="col-sm-4 jumbotron">
+							<h2>2</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
+						<div id="shop3" class="col-sm-4 jumbotron">
+							<h2>3</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
+						<div id="shop4" class="col-sm-4 jumbotron">
+							<h2>4</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
+						<div id="shop5" class="col-sm-4 jumbotron">
+							<h2>5</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
+						<div id="shop6" class="col-sm-4 jumbotron">
+							<h2>6</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
+						<div id="shop7" class="col-sm-4 jumbotron">
+							<h2>7</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
+						<div id="shop8" class="col-sm-4 jumbotron">
+							<h2>8</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
+						<div id="shop9" class="col-sm-4 jumbotron">
+							<h2>9</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
+						<div id="shop10" class="col-sm-4 jumbotron">
+							<h2>10</h2>
+							<p>Opening times: </p>
+							<p>Pricing: </p>
+							<p>Barbers working: </p>
+							<p>Customers waiting: </p>
+							<p>Waiting time: </p>
+						</div>
+
             <div id="map" class="col-sm-8">
                 <script>
 
-									const mysql = require('mysql');
-
-									var sqlconnect =  mysql.createConnection({
-									      host: 'localhost',
-									      user: 'root',
-									      password: 'root',
-									      database: 'inseDB'
-									  });
-
-										app.get('/longitude', function (req, res) {
-										        sqlconnect.query('select shop_Longitude from inseDB.Shop', function(err, recordset) {
-										            if(err) console.log(err);
-										            res.end(JSON.stringify(recordset)); // Result in JSON format
-										        });
-										    });
-												
                     // Initialize and add the map
                     function initMap() {
                     // The center point of Portsmouth (50.7953904,-1.07100002)
@@ -69,7 +144,7 @@
                         document.getElementById('map'), {zoom: 14, center: center});
                     // The marker, positioned at Portsmouth
                         var shop1 = new google.maps.Marker({position: {lat: 50.786600, lng: -1.072379}, map: map, animation: google.maps.Animation.DROP});
-                        google.maps.event.addListener(shop1, 'click', function (shop1, i) {
+											  google.maps.event.addListener(shop1, 'click', function (shop1, i) {
 													if ($('#shop1').css('display') == 'block') {
 									            $('#shop1').css('display', 'none');
 									        } else {
@@ -83,6 +158,7 @@
 															$('#shop8').css('display', 'none');
 															$('#shop9').css('display', 'none');
 															$('#shop10').css('display', 'none');
+															getData();
 									        }
 									    		});
                         var shop2 = new google.maps.Marker({position: {lat: 50.793546, lng: -1.076251}, map: map, animation: google.maps.Animation.DROP});
@@ -240,104 +316,19 @@
 													});
 												}
 
+												var x = document.querySelector('#shop1');
+
+												function getData() {
+												console.log("hello world");
+												x.textContent = "hello world"
+												};
+
                   </script>
 
                   <script async defer
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Fd1TTEwH1qdMNvYdNJh7XVahBHc47J4&callback=initMap">
                   </script>
                   </div>
-
-								<div id="shop1" class="col-sm-4 jumbotron">
-                       <h2>1</h2>
-                       <p>Opening times: </p>
-											 <p>Pricing: </p>
-											 <p>Barbers working: </p>
-											 <p>Customers waiting: </p>
-											 <p>Waiting time: </p>
-
-                </div>
-
-								<div id="shop2" class="col-sm-4 jumbotron">
-									<h2>2</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
-								<div id="shop3" class="col-sm-4 jumbotron">
-									<h2>3</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
-								<div id="shop4" class="col-sm-4 jumbotron">
-									<h2>4</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
-								<div id="shop5" class="col-sm-4 jumbotron">
-									<h2>5</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
-								<div id="shop6" class="col-sm-4 jumbotron">
-									<h2>6</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
-								<div id="shop7" class="col-sm-4 jumbotron">
-									<h2>7</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
-								<div id="shop8" class="col-sm-4 jumbotron">
-									<h2>8</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
-								<div id="shop9" class="col-sm-4 jumbotron">
-									<h2>9</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
-								<div id="shop10" class="col-sm-4 jumbotron">
-									<h2>10</h2>
-									<p>Opening times: </p>
-									<p>Pricing: </p>
-									<p>Barbers working: </p>
-									<p>Customers waiting: </p>
-									<p>Waiting time: </p>
-                </div>
-
         </div>
       </div>
 	    <!--- Footer --->
