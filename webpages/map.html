@@ -43,6 +43,23 @@
             <!--The div element for the map -->
             <div id="map" class="col-sm-8">
                 <script>
+
+									const mysql = require('mysql');
+
+									var sqlconnect =  mysql.createConnection({
+									      host: 'localhost',
+									      user: 'root',
+									      password: 'root',
+									      database: 'inseDB'
+									  });
+
+										app.get('/longitude', function (req, res) {
+										        sqlconnect.query('select shop_Longitude from inseDB.Shop', function(err, recordset) {
+										            if(err) console.log(err);
+										            res.end(JSON.stringify(recordset)); // Result in JSON format
+										        });
+										    });
+												
                     // Initialize and add the map
                     function initMap() {
                     // The center point of Portsmouth (50.7953904,-1.07100002)
@@ -231,53 +248,94 @@
                   </div>
 
 								<div id="shop1" class="col-sm-4 jumbotron">
-                       <h2>Barber Info1</h2>
-                       <p>Barber info is displayed here</p>
+                       <h2>1</h2>
+                       <p>Opening times: </p>
+											 <p>Pricing: </p>
+											 <p>Barbers working: </p>
+											 <p>Customers waiting: </p>
+											 <p>Waiting time: </p>
+
                 </div>
 
 								<div id="shop2" class="col-sm-4 jumbotron">
-                       <h2>Barber Info2</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>2</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
 								<div id="shop3" class="col-sm-4 jumbotron">
-                       <h2>Barber Info3</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>3</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
 								<div id="shop4" class="col-sm-4 jumbotron">
-                       <h2>Barber Info4</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>4</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
 								<div id="shop5" class="col-sm-4 jumbotron">
-                       <h2>Barber Info5</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>5</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
 								<div id="shop6" class="col-sm-4 jumbotron">
-                       <h2>Barber Info6</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>6</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
 								<div id="shop7" class="col-sm-4 jumbotron">
-                       <h2>Barber Info7</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>7</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
 								<div id="shop8" class="col-sm-4 jumbotron">
-                       <h2>Barber Info8</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>8</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
 								<div id="shop9" class="col-sm-4 jumbotron">
-                       <h2>Barber Info9</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>9</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
 								<div id="shop10" class="col-sm-4 jumbotron">
-                       <h2>Barber Info10</h2>
-                       <p>Barber info is displayed here</p>
+									<h2>10</h2>
+									<p>Opening times: </p>
+									<p>Pricing: </p>
+									<p>Barbers working: </p>
+									<p>Customers waiting: </p>
+									<p>Waiting time: </p>
                 </div>
 
         </div>
