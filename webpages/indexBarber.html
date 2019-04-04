@@ -10,9 +10,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="increaseDecrease.js"></script>
 	<!-- Custom styles --->
 	<link href="css/custom.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -48,14 +48,14 @@
 
 		<div class="grid-container">
 			<div class="gitem">Barbers working</div>
-			<div>0</div>
-			<div><a href="#" class="btn btn-outline-light">IncreaseB</a></div>
-			<div><a href="#" class="btn btn-outline-light">DecreaseB</a></div>
+			<input type="text" id="BarbNumber" value="0" readonly/>
+			<div><a href="#" class="btn btn-outline-light" onclick="incrementBarb()">IncreaseB</a></div>
+			<div><a href="#" class="btn btn-outline-light" onclick="decreaseBarb()">DecreaseB</a></div>
 
 			<div class="gitem">Customers waiting</div>
-			<div>0</div>
-			<div><a href="#" class="btn btn-outline-light">IncreaseC</a></div>
-			<div><a href="#" class="btn btn-outline-light">DecreaseC</a></div>
+			<input type="text" id="CustNumber" value="0" readonly/>
+			<div><a href="#" class="btn btn-outline-light" onclick="increaseCust()">IncreaseC</a></div>
+			<div><a href="#" class="btn btn-outline-light" onclick="decreaseCust()">DecreaseC</a></div>
 
 			<div class="gitem">Open?</div>
 			<div></div>
