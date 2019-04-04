@@ -8,10 +8,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="login.css">
-<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
+
   <nav class="navbar navbar-expand-md navbar-dark sticky-top">
   <!-- Brand -->
   <a class="navbar-brand" href="index.html">FindMyBarber</a>
@@ -32,16 +32,39 @@
           </ul>
       </div>
   </nav>
+  <body>
 <div class="loginbox" >
   <h1>Login here</h1>
   <form>
     <p>Username</p>
-    <input type="text" name="" placeholder="Enter Username">
+    <input type="text" name="username" placeholder="Enter Username">
     <p>Password</p>
-    <input type="password" name="" placeholder="Enter Password">
-    <input class="button" type="submit" name="" value="Login">
+    <input type="password" name="password" placeholder="Enter Password">
+    <a href="indexBarber.html"><input class="button" type="submit" name="" value="Login"></a>
 
   </form>
+
 </div>
+
+<section><div></div></section>
+    <!--- Footer --->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-5 mb-lg-0">
+            <div class="footer-logo"><img src="" class="img-fluid"></div>
+          </div>
+          <div class="col-lg-3 mb-5 mb-lg-0">
+            <h5 class="footer-heading">Site pages</h5>
+            <ul class="list-unstyled">
+              <li> <a href="index.html" class="footer-link">Home</a></li>
+              <li> <a href="map.html" class="footer-link">Map</a></li>
+              <li> <a href="indexBarber.html" class="footer-link">BarberMode</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 </body>
 </html>
