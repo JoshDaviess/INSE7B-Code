@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Barbershop App</title>
+<meta charset="utf-8">
+	<!--- Bootstrap-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="increaseDecrease.js"></script>
+	<!-- Custom styles --->
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+	<header class="landing">
+    <!--- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+		<!-- Brand -->
+		<a class="navbar-brand" href="index.html">FindMyBarber</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-container" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="map.html" class="nav-link">Map</a></li>
+                  <!-- Link-->
+                  <li class="nav-item"> <a href="indexBarber.html" class="nav-link active">BarberMode</a></li>
+                  <!-- Link-->
+            <a href="login.html"  class="btn btn-primary navbar-btn ml-0 ml-lg-3">Login </a>
+            </ul>
+        </div>
+    </nav>
+    <!--- End of NavBar -->
+	<div class="grid-container">
+			<div class="gitem">Standard Cut</div>
+			<input type="text" value="7 £" readonly/>
+			<div class="gitem">Student Cut</div>
+			<input type="text" value="6 £" readonly/>
+			<div class="gitem">OAP Cut</div>
+			<input type="text" value="5 £" readonly/>
+			<div class="gitem">Cut And Shave</div>
+			<input type="text" value="15 £" readonly/>
+			<div class="gitem">Cut And Style</div>
+			<input type="text" value="9 £" readonly/>
+			<div class="gwait"><a href="indexBarber.html" class="btn btn-outline-light">Modify Prices</a></div>
+
+
+		</div>
+		<section><div></div></section>
+			<!--- Footer --->
+		    <footer class="main-footer">
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-lg-3 mb-5 mb-lg-0">
+		            <div class="footer-logo"><img src="" class="img-fluid"></div>
+		          </div>
+		          <div class="col-lg-3 mb-5 mb-lg-0">
+		            <h5 class="footer-heading">Site pages</h5>
+		            <ul class="list-unstyled">
+		              <li> <a href="index.html" class="footer-link">Home</a></li>
+		              <li> <a href="map.html" class="footer-link">Map</a></li>
+		              <li> <a href="indexBarber.html" class="footer-link">BarberMode</a></li>
+		            </ul>
+		          </div>
+		        </div>
+		      </div>
+		    </footer>
+		    <!--- End of Footer --->
+
+</body>
+
+
+</html>
