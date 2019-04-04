@@ -1,3 +1,4 @@
+// Increases barbers working by 1
 function incrementBarb(){
     var value = parseInt(document.getElementById('BarbNumber').value, 10);
     value = isNaN(value) ? 0 : value;
@@ -7,6 +8,7 @@ function incrementBarb(){
     }
     document.getElementById('BarbNumber').value = value;
 }
+// decreases barbers working by 1
 function decreaseBarb(){
     var value = parseInt(document.getElementById('BarbNumber').value, 10);
     value = isNaN(value) ? 0 : value;
@@ -16,6 +18,7 @@ function decreaseBarb(){
     }
     document.getElementById('BarbNumber').value = value;
 }
+// Increases customers waiting by 1
 function increaseCust(){
     var value = parseInt(document.getElementById('CustNumber').value, 10);
     value = isNaN(value) ? 0 : value;
@@ -25,6 +28,7 @@ function increaseCust(){
     }
     document.getElementById('CustNumber').value = value;
 }
+// decreases customers waiting by 1
 function decreaseCust(){
     var value = parseInt(document.getElementById('CustNumber').value, 10);
     value = isNaN(value) ? 0 : value;

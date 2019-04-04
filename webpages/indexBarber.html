@@ -32,9 +32,7 @@
                   <!-- Link-->
                   <li class="nav-item"> <a href="map.html" class="nav-link">Map</a></li>
                   <!-- Link-->
-                  <li class="nav-item"> <a href="indexBarber.html" class="nav-link active">BarberMode</a></li>
-                  <!-- Link-->
-            <a href="link.html" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Login </a>
+            <a href="index.html" data-toggle="modal" data-target="#login" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Logout </a>
             </ul>
         </div>
     </nav>
@@ -58,17 +56,27 @@
 			<div><a href="#" class="btn btn-outline-light" onclick="decreaseCust()">DecreaseC</a></div>
 
 			<div class="gitem">Open?</div>
-			<div></div>
-			<div><a href="#" class="btn btn-outline-light">Yes</a></div>
-			<div><a href="#" class="btn btn-outline-light">No</a></div>
+			<input type="text" id="Opened" value="Open" readonly/>
+			<div><a href="#" class="btn btn-outline-light" onclick="openStore()">Open</a></div>
+			<div><a href="#" class="btn btn-outline-light" onclick="closeStore()">Close</a></div>
 
-			<div class="gwait">Estimated waiting time</div>
-			<div class="gwait">0:00</div>
+			<div class="gwait">Estimated waiting time (In Minutes)</div>
+			<div class="gwait" id="Waiting Time"></div>
 
 			<div class="gwait"><a href="barberOpeningTimes.html" class="btn btn-outline-light">Modify Opening Times</a></div>
-			<div class="gwait"><a href="modifypricepage.html" class="btn btn-outline-light">Modify Prices</a></div>
 		</div>
-
+		<script>
+		var x = Math.floor((Math.random() * 10) + 1);
+		document.getElementById("Waiting Time").innerHTML = x;
+		</script>
+		<script>
+function closeStore() {
+  document.getElementById("Opened").value = "Closed";
+}
+function openStore() {
+  document.getElementById("Opened").value = "Open";
+}
+</script>
 <section><div></div></section>
 	<!--- Footer --->
     <footer class="main-footer">
