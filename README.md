@@ -1,4 +1,4 @@
-###### INSE7B-Code
+##### INSE7B-Code
 ### Files
 - `server.js` - starts server on port 8080
 - `database.sql` – creates the database
@@ -9,7 +9,6 @@
 ### Folders
 - `node_modules` - Contains all the neccessary node modules for our server
 - `webpages` - Contains all the webpages for our server
-
 
 ### Usernames
 - 'JoshDaviess' - Joshua Davies
@@ -37,3 +36,7 @@ node server
 ``` 
 this will run the server on your VM. You can now access the website via the VM IP address.
 
+### Instructions for running tests
+The tests are made with the Helium API. Ensure your python environment can access this API.
+Just run `Testing.py` as a script, and then run main().
+You will be prompted to enter the IP address for the website. enter this in normally. If hosting on your own PC, you can just enter localhost.
